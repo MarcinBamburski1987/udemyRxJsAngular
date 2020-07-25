@@ -12,7 +12,8 @@ export class DataService {
   constructor(private dataBaseService: DataBaseService) {
     this.init();
   }
-  private addPerson(person: Person){
+
+  addPerson(person: Person){
     this.dataBaseService.addPerson(person).subscribe(this.observer())
   }
 
